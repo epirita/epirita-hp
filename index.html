@@ -125,6 +125,12 @@
             color: #aaa;
             font-size: 0.9rem;
         }
+        .insta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-bottom: 24px; }
+        .insta-card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05); text-align: left; display: flex; flex-direction: column; }
+        .insta-card img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block; }
+        .insta-cap { padding: 12px 14px 6px; font-size: 0.85rem; color: #555; line-height: 1.6; flex: 1; }
+        .insta-more { padding: 0 14px 14px; }
+        .insta-more a { color: #1a3a5f; font-weight: bold; font-size: 0.85rem; text-decoration: none; }
         .sns-link-wrap { display: flex; flex-direction: column; align-items: center; gap: 12px; }
         .btn-instagram { background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
         .btn-x { background: #000; font-size: 1rem; max-width: 260px; padding: 12px 20px; }
@@ -268,8 +274,10 @@
               埋め込みコードの最後に <script async src="//www.instagram.com/embed.js"></script> が付きますが、
               bodyの閉じタグ直前に1回だけ置けば十分です（重複不要）。
             -->
-            <div class="instagram-embed-wrap">
-                <p style="margin:0; color:#aaa;">Instagram 投稿を埋め込む場合はここに貼り付けてください</p>
+            <div class="insta-grid">
+                <!-- INSTA:START -->
+                <p style="margin:0; color:#aaa; grid-column:1/-1;">最新の投稿はまもなく自動で表示されます。</p>
+                <!-- INSTA:END -->
             </div>
 
             <div class="sns-link-wrap">
