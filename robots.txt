@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://epirita.github.io/sitemap.xml
